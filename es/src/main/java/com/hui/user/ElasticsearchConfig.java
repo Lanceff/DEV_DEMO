@@ -1,4 +1,4 @@
-package com.hui.config;
+package com.hui.user;
 
 import org.apache.http.HttpHost;
 import org.elasticsearch.client.RestClient;

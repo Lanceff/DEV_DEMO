@@ -3,11 +3,9 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="userService" lazy-init="true" class="com.hui.UserService">
-
+    <bean id="userService" lazy-init="true" class="com.hui.my.UserService">
     </bean>
-    <bean id="userController" class="com.hui.UserController">
+    <bean id="userController" class="com.hui.my.UserController">
          <property name="userService" ref="userService"/>
     </bean>
-
 </beans>

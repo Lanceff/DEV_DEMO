@@ -14,13 +14,7 @@
         <module name="es" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel target="11">
-      <module name="es" target="11" />
-      <module name="kafka_springboot" target="11" />
-      <module name="kafka_stu" target="11" />
-      <module name="redis_op" target="11" />
-      <module name="spring-stu" target="11" />
-    </bytecodeTargetLevel>
+    <bytecodeTargetLevel target="11" />
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">

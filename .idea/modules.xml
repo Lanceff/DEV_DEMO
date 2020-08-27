@@ -3,11 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/designerPattern/designerPattern.iml" filepath="$PROJECT_DIR$/designerPattern/designerPattern.iml" />
-      <module fileurl="file://$PROJECT_DIR$/es/es.iml" filepath="$PROJECT_DIR$/es/es.iml" />
-      <module fileurl="file://$PROJECT_DIR$/kafka_springboot/kafka_springboot.iml" filepath="$PROJECT_DIR$/kafka_springboot/kafka_springboot.iml" />
-      <module fileurl="file://$PROJECT_DIR$/kafka_stu/kafka_stu.iml" filepath="$PROJECT_DIR$/kafka_stu/kafka_stu.iml" />
-      <module fileurl="file://$PROJECT_DIR$/redis_test/redis_op.iml" filepath="$PROJECT_DIR$/redis_test/redis_op.iml" />
-      <module fileurl="file://$PROJECT_DIR$/spring-stu/spring-stu.iml" filepath="$PROJECT_DIR$/spring-stu/spring-stu.iml" />
     </modules>
   </component>
 </project>

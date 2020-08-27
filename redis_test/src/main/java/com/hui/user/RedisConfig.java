@@ -1,4 +1,4 @@
-package com.hui.config;
+package com.hui.user;
 
 import com.fasterxml.jackson.annotation.JsonAutoDetect;
 import com.fasterxml.jackson.annotation.JsonInclude;
