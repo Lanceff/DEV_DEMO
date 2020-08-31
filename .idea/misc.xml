@@ -6,9 +6,12 @@
       <list>
         <option value="$PROJECT_DIR$/es/pom.xml" />
         <option value="$PROJECT_DIR$/kafka_stu/pom.xml" />
-        <option value="$PROJECT_DIR$/redis_test/pom.xml" />
         <option value="$PROJECT_DIR$/kafka_springboot/pom.xml" />
         <option value="$PROJECT_DIR$/spring-stu/pom.xml" />
+        <option value="$PROJECT_DIR$/springsecurity/pom.xml" />
+        <option value="$PROJECT_DIR$/springsecurity-oauth-server/pom.xml" />
+        <option value="$PROJECT_DIR$/springsecurity-oauth2-resources/pom.xml" />
+        <option value="$PROJECT_DIR$/springsecurity-oauth2-server/pom.xml" />
       </list>
     </option>
   </component>

@@ -1,0 +1,33 @@
+server:
+  port: 8081
+  servlet:
+    context-path: /contents
+
+spring:
+  application:
+    name: oauth2-resources
+  security:
+    oauth2:
+      client:
+        client-id: client
+        client-secret: secret
+        access-token-uri: http://localhost:8080/oauth/token
+        user-authorization-uri: http://localhost:8080/oauth/authorize
+      resource:
+        token-info-uri: http://localhost:8080/oauth/check_token
+
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: admin123
+    url: jdbc:mysql://localhost:3306/oauth2?useUnicode=true&characterEncoding=utf-8&useSSL=false
+    type: com.zaxxer.hikari.HikariDataSource
+
+logging:
+  level:
+    com.hui.mapper: debug
+
+
+mybatis-plus:
+  type-aliases-package: com.hui.entity
+  mapper-locations: classpath:/mapper/*.xml
