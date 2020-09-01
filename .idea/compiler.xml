@@ -17,19 +17,13 @@
         <module name="es" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel target="11">
-      <module name="redis_op" target="11" />
-      <module name="springsecurity-oauth2" target="11" />
-      <module name="springsecurity_base" target="1.5" />
-    </bytecodeTargetLevel>
+    <bytecodeTargetLevel target="11" />
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="es" options="-parameters" />
       <module name="kafka_springboot" options="-parameters" />
-      <module name="redis_op" options="-parameters" />
       <module name="springsecurity" options="-parameters" />
-      <module name="springsecurity-oauth2" options="-parameters" />
       <module name="springsecurity-oauth2-resources" options="-parameters" />
       <module name="springsecurity-oauth2-server" options="-parameters" />
     </option>
