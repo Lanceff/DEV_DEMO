@@ -1,5 +1,6 @@
 package com.hui.service.impl;
 
+import com.alibaba.fastjson.JSON;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.hui.entity.TbUser;
 import com.hui.service.TbPermissionService;
@@ -43,6 +44,8 @@ public class SysUserDetailsService implements UserDetailsService {
                 grantedAuthorities.add(new SimpleGrantedAuthority(permission));
             });
         }
+        String userTD = JSON.toJSONString(tuser);
+//        User user = new User(userTD, tuser.getPassword(), grantedAuthorities);
         User user = new User(tuser.getUsername(), tuser.getPassword(), grantedAuthorities);
         return user;
     }
