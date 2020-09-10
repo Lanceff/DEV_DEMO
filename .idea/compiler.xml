@@ -14,14 +14,14 @@
         <module name="springsecurity" />
         <module name="springsecurity_base" />
         <module name="spring-stu" />
-        <module name="es" />
+        <module name="elasticsearch_stu" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="11" />
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="es" options="-parameters" />
+      <module name="elasticsearch_stu" options="-parameters" />
       <module name="kafka_springboot" options="-parameters" />
       <module name="springsecurity" options="-parameters" />
       <module name="springsecurity-oauth2-resources" options="-parameters" />
