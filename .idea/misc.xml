@@ -13,6 +13,12 @@
         <option value="$PROJECT_DIR$/springsecurity-oauth2-resources/pom.xml" />
         <option value="$PROJECT_DIR$/springsecurity-oauth2-server/pom.xml" />
         <option value="$PROJECT_DIR$/elasticsearch_stu/pom.xml" />
+        <option value="$PROJECT_DIR$/../TX_JSON/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot_stu/pom.xml" />
+        <option value="$PROJECT_DIR$/my-spring-boot-starter/pom.xml" />
+        <option value="$PROJECT_DIR$/../my-spring-boot-autoconfigure/pom.xml" />
+        <option value="$PROJECT_DIR$/my-springboot-start-test/pom.xml" />
+        <option value="$PROJECT_DIR$/my-spring-boot-autoconfigure/pom.xml" />
       </list>
     </option>
   </component>

@@ -10,4 +10,12 @@ public class SelectOne {
     public SelectOne() {
         System.out.println("SelectOne 构造");
     }
+
+    public void init() {
+        System.out.println("SelectOne init...");
+    }
+
+    public void destroy() {
+        System.out.println("SelectOne destroy...");
+    }
 }

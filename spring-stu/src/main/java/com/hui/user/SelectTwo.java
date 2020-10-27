@@ -6,6 +6,7 @@ package com.hui.user;
  * @Description:
  */
 public class SelectTwo {
+
     public SelectTwo() {
         System.out.println("SelectTwo 构造");
     }

@@ -2,11 +2,12 @@ package com.hui;
 
 import com.hui.conditional.WindowsCondition;
 import com.hui.factoryBean.MyFactoryBean;
-import com.hui.user.Cat;
-import com.hui.user.Color;
-import com.hui.user.Dog;
+import com.hui.user.*;
 import org.springframework.beans.factory.annotation.Configurable;
 import org.springframework.context.annotation.*;
+import org.springframework.stereotype.Controller;
+import org.springframework.stereotype.Repository;
+import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 /**
  * @author: Lance
@@ -21,17 +22,19 @@ import org.springframework.context.annotation.*;
  * FilterType.REGEX：使用正则指定
  * FilterType.CUSTOM：使用自定义规则
  */
-/*@ComponentScans(value = {
+@ComponentScans(value = {
         @ComponentScan(value = "com.hui.user", excludeFilters = {
-                @Filter(type = FilterType.ANNOTATION, value = {Controller.class})
+                @ComponentScan.Filter(type = FilterType.ANNOTATION, value = {Controller.class, Repository.class})
         }),
-        @ComponentScan(value = "com.hui.my", useDefaultFilters = false, includeFilters = {
+        /*@ComponentScan(value = "com.hui.my", useDefaultFilters = false, includeFilters = {
                 @Filter(type = FilterType.ASSIGNABLE_TYPE, value = {UserController.class})
-        })
-})*/
+        })*/
+})
 @Configurable
-@ComponentScan(value = "com.hui.user")
+//@ComponentScan(value = "com.hui.user")
 @Import(value = {MyImportClass.class, MyImportSelector.class, MyImportBeanDefinitionRegistrar.class})
+@EnableAspectJAutoProxy
+@EnableTransactionManagement
 public class AppConfig {
 
     /**
@@ -54,6 +57,11 @@ public class AppConfig {
         return new Cat();
     }
 
+    @Bean(initMethod = "init", destroyMethod = "destroy")
+    public SelectOne selectOne() {
+        return new SelectOne();
+    }
+
     @Bean
     @Conditional(value = WindowsCondition.class)
     public Dog dog() {
@@ -65,12 +73,12 @@ public class AppConfig {
      * 1）、包扫描+组件标注注解（@Controller/@Service/@Repository/@Component）[自己写的类]
      * 2）、@Bean[导入的第三方包里面的组件]
      * 3）、@Import[快速给容器中导入一个组件]
-     *      1）、@Import(要导入到容器中的组件)；容器中就会自动注册这个组件，id默认是全类名
-     *      2）、ImportSelector:返回需要导入的组件的全类名数组；
-     *      3）、ImportBeanDefinitionRegistrar:手动注册bean到容器中
+     * 1）、@Import(要导入到容器中的组件)；容器中就会自动注册这个组件，id默认是全类名
+     * 2）、ImportSelector:返回需要导入的组件的全类名数组；
+     * 3）、ImportBeanDefinitionRegistrar:手动注册bean到容器中
      * 4）、使用Spring提供的 FactoryBean（工厂Bean）;
-     *      1）、默认获取到的是工厂bean调用getObject创建的对象
-     *      2）、要获取工厂Bean本身，我们需要给id前面加一个&
+     * 1）、默认获取到的是工厂bean调用getObject创建的对象
+     * 2）、要获取工厂Bean本身，我们需要给id前面加一个&
      * &MyFactoryBean
      */
     @Bean

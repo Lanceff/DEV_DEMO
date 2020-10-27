@@ -4,6 +4,7 @@ import com.hui.aware.MyContent;
 import com.hui.my.MyAutowired;
 import com.hui.my.UserController;
 import com.hui.my.UserService;
+import com.hui.user.MyDao;
 import org.junit.Test;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
@@ -66,15 +67,17 @@ public class MyTest {
         System.out.println(bean);
     }
 
-
     @Test
     public void AnnotationConfig() {
         AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
-        String[] beanDefinitionNames = context.getBeanDefinitionNames();
+       /* MyDao hello = (MyDao) context.getBean("hello");
+        hello.printStr();*/
+
+       /* String[] beanDefinitionNames = context.getBeanDefinitionNames();
         System.out.println("============");
         for (String beanDefinitionName : beanDefinitionNames) {
             System.out.println(beanDefinitionName);
-        }
+        }*/
         System.out.println("============");
         /*Object color1 = context.getBean("color");
         Object color2 = context.getBean("color");
@@ -85,10 +88,10 @@ public class MyTest {
         context.getBean("cat");
         System.out.println(cat1==cat2);*/
 
-        Object fbean1 = context.getBean("myFactoryBean");
+        /*Object fbean1 = context.getBean("myFactoryBean");
         Object fbean2 = context.getBean("&myFactoryBean");
         System.out.println(fbean1.getClass());
-        System.out.println(fbean2.getClass());
+        System.out.println(fbean2.getClass());*/
     }
 
     @Test
@@ -118,5 +121,7 @@ public class MyTest {
         System.out.println(context.getBean("color"));
         context.close();
     }
+
+
 }
 

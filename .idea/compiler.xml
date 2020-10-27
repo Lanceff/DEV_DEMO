@@ -7,22 +7,33 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="my-springboot-start-test" />
+        <module name="bootsource" />
         <module name="kafka_springboot" />
         <module name="springsecurity-oauth2-server" />
+        <module name="my-spring-boot-starter" />
         <module name="springsecurity-oauth2-resources" />
-        <module name="kafka_stu" />
         <module name="springsecurity" />
-        <module name="springsecurity_base" />
         <module name="spring-stu" />
+        <module name="TX_JSON" />
+        <module name="my-spring-boot-autoconfigure" />
+        <module name="kafka_stu" />
+        <module name="springsecurity_base" />
         <module name="elasticsearch_stu" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel target="11" />
+    <bytecodeTargetLevel target="11">
+      <module name="juc_test" target="8" />
+      <module name="springboot_stu" target="11" />
+      <module name="tx_json" target="11" />
+      <module name="TX_JSON" target="11" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="elasticsearch_stu" options="-parameters" />
       <module name="kafka_springboot" options="-parameters" />
+      <module name="my-springboot-start-test" options="-parameters" />
       <module name="springsecurity" options="-parameters" />
       <module name="springsecurity-oauth2-resources" options="-parameters" />
       <module name="springsecurity-oauth2-server" options="-parameters" />

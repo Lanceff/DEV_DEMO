@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/designerPattern/designerPattern.iml" filepath="$PROJECT_DIR$/designerPattern/designerPattern.iml" />
+      <module fileurl="file://$PROJECT_DIR$/juc_test/juc_test.iml" filepath="$PROJECT_DIR$/juc_test/juc_test.iml" />
     </modules>
   </component>
 </project>

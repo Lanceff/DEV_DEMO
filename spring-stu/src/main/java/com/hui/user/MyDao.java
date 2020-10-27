@@ -9,4 +9,11 @@ import org.springframework.stereotype.Repository;
  */
 @Repository
 public class MyDao {
+    MyDao(){
+        System.out.println("MyDao 构造");
+    }
+
+    public void printStr() {
+        System.out.println("MyDao function exec。。。");
+    }
 }

@@ -29,10 +29,10 @@ import javax.annotation.Resource;
 import java.io.IOException;
 import java.util.Iterator;
 import java.util.List;
+import java.util.concurrent.locks.ReentrantReadWriteLock;
 
 @SpringBootTest
 public class ESStuTest {
-
     @Resource
     private CarBrandService carBrandService;
 

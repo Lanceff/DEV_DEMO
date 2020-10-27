@@ -25,7 +25,8 @@ public class IdempotentProducer {
 
         /**
          * kafka开启幂等写，保证不重复写入
-         * 幂等性必须配置 max.in.flight.requests.per.connection小于或等于5，retries大于0,acks必须为all(-1)，如果用户未明确设置这些值，则将选择合适的值
+         * 幂等性必须配置 max.in.flight.requests.per.connection小于或等于5，retries大于0,acks必须为all(-1)，
+         * 如果用户未明确设置这些值，则将选择合适的值
          */
         config.put(ProducerConfig.ENABLE_IDEMPOTENCE_CONFIG, true);
         //限制客户端在单个连接上能够发送的未响应请求的个数。设置此值是1表示kafka broker在响应请求之前client不能再向同一个broker发送请求。设置此参数是为了避免消息乱序

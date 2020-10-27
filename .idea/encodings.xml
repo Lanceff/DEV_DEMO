@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="Encoding">
+  <component name="Encoding" defaultCharsetForPropertiesFiles="UTF-8">
     <file url="file://$PROJECT_DIR$/elasticsearch_stu/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/juc_test/src/Main.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/kafka_springboot/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/my-springboot-start-test/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-stu/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-stu/src/main/java/com/hui/my/UserService.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/spring-stu/src/main/resources" charset="UTF-8" />
@@ -10,6 +12,6 @@
     <file url="file://$PROJECT_DIR$/springsecurity-oauth2-server/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springsecurity/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springsecurity/src/main/resources" charset="UTF-8" />
-    <file url="PROJECT" charset="GBK" />
+    <file url="PROJECT" charset="UTF-8" />
   </component>
 </project>
